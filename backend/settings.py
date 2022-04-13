@@ -16,6 +16,9 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
 
     # Apps
+    'core',
+    
+    # Libraries
     'rest_framework',
 ]
 
