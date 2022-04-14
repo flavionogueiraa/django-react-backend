@@ -1,0 +1,10 @@
+http://localhost:8000/core/list/
+Authorization: token 955b30a7bd5ed85a7c067e33c5ed12e99d24e1f5
+
+###
+http://localhost:8000/core/list/1/
+Authorization: token 955b30a7bd5ed85a7c067e33c5ed12e99d24e1f5
+
+###
+DELETE http://localhost:8000/core/listitem/1/
+Authorization: token 955b30a7bd5ed85a7c067e33c5ed12e99d24e1f5
