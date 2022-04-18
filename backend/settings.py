@@ -19,6 +19,7 @@ INSTALLED_APPS = [
     'core',
     
     # Libraries
+    'corsheaders',
     'rest_framework',
     'rest_framework.authtoken',
 ]
@@ -26,11 +27,16 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
-    'django.middleware.common.CommonMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
+    'django.middleware.common.CommonMiddleware', # Cors
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+]
+
+CORS_ORIGIN_WHITELIST = [
+    'http://localhost:3000',
 ]
 
 ROOT_URLCONF = 'backend.urls'
