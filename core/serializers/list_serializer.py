@@ -10,6 +10,7 @@ class ListSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
         model = List
         fields = [
+            'id',
             'url',
             'name',
             'owner',
