@@ -7,10 +7,10 @@ from ..serializers import ListSerializer
 class ListViewSet(viewsets.ModelViewSet):
     queryset = List.objects.all()
     serializer_class = ListSerializer
-    # permission_classes = [
-    #     permissions.IsAuthenticated
-    # ]
-    # authentication_classes = [
-    #     authentication.TokenAuthentication,
-    #     authentication.SessionAuthentication
-    # ]
+    permission_classes = [
+        permissions.IsAuthenticated
+    ]
+    authentication_classes = [
+        authentication.TokenAuthentication,
+        authentication.SessionAuthentication
+    ]
